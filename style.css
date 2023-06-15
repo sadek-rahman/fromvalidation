@@ -1,0 +1,81 @@
+:root{
+    --success-color:green;
+    --error-color:red;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: blue; */
+}
+.container{
+    margin: 0 auto;
+    width: 500px;
+    height: 700px;
+    /* border: 1px solid black; */
+    box-shadow: 0 2px 20px rgba(0,0,0,0.7);
+    text-align: center;
+    background-color: rgb(146, 146, 142);
+}
+h2{
+    text-align: center;
+    text-transform: capitalize;
+    margin:10px;
+    padding: 20px;
+    color: tomato;
+    
+
+}
+.form_control{
+    /* margin: 0 auto; */
+padding: 10px;
+position: relative;
+
+
+}
+.form_control label{
+    text-transform: capitalize;
+    color:white;
+    display: block;
+    padding: 10px;
+    margin-bottom: 4px;
+    
+}
+.form_control input{
+    width:80%;
+    height:35px;
+    padding:10px;
+    /* border:1px solid black; */
+    border-radius: 5px;
+}
+.form_control input:focus{
+border-color:rgb(110, 107, 110);
+outline: none;
+background-color:antiquewhite
+}
+.form_control small{
+    position:absolute;
+    visibility: hidden;
+}
+.form_control.error small{
+    visibility: visible;
+}
+.btn{
+    cursor:pointer;
+    margin-top:50px;
+    padding:10px 15px;
+    width:30%;
+    border:1px solid rgb(200, 255, 0);
+    border-radius:5px;
+
+}
+.btn:focus{
+    background-color: blueviolet;
+}
+
+.form_control.sucsess {
+border-color: var (--success-color);
+}
+.form_control.error {
+border-color: var(--error-color);
+}
